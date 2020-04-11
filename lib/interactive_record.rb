@@ -8,6 +8,6 @@ class InteractiveRecord
   end
   
   def self.column_names
-    
+DB[:con]
   end
-end
+end.results_as_hash = true
